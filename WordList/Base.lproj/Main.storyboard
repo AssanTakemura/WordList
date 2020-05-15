@@ -246,7 +246,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="一覧" id="zNA-X8-Ub5">
-                        <barButtonItem key="leftBarButtonItem" title="もどる" id="ym2-Gh-SPK"/>
+                        <barButtonItem key="leftBarButtonItem" title="もどる" id="ym2-Gh-SPK">
+                            <connections>
+                                <segue destination="XB8-ZB-UuC" kind="unwind" unwindAction="backWithSender:" id="ZXR-fn-bie"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="＋" id="WUt-na-fLM">
                             <connections>
                                 <segue destination="JQO-Z6-Gzj" kind="show" id="SLY-JO-gnj"/>
@@ -255,6 +259,7 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4p-WY-e3H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="XB8-ZB-UuC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="927.536231884058" y="839.73214285714278"/>
         </scene>
